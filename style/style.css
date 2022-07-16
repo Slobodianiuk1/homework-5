@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+	line-height: 1;
+	transition: all .1s ease-in;
+}
+
+
+
+.header {
+	min-height: 82px;
+	background-color: #4A4F56;
+	padding: 23px 0 12px;
+}
+
+.container {
+	max-width: 535px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header h1 {
+	color: #FF8984;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+.header p {
+	color: #FF8984;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+/* !list */
+
+.food {
+	background-color: #3B3F45;
+	height: calc(100vh - 83px);
+}
+
+.list {
+	padding: 20px 0 45px;
+}
+
+.list li:nth-child(odd) {
+	background-color: #88839E;
+}
+
+.list li:nth-child(even) {
+	background-color: #7A7593;
+}
+
+.list-item {
+	display: flex;
+	align-items: center;
+
+}
+
+.list-item label {
+	display: flex;
+	height: 45px;
+	justify-items: center;
+	width: 100%;
+}
+
+.list-item label::before {
+	text-decoration: line-through;
+}
+
+.list label:hover {
+	background-color: #625E77;
+	min-height: 41px;
+	border: solid #fff 2px;
+	border-left: none;
+	border-right: none;
+}
+
+
+.text {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	padding: 12px 0 12px;
+	font-size: 18px;
+	font-weight: 400px;
+	margin-left: 47px;
+	position: relative;
+}
+
+.text span {
+	color: #fff;
+	font-size: 11px;
+	margin-left: 10px;
+}
+
+.text span::before {
+	content: "(";
+}
+
+.text span::after {
+	content: ")";
+}
+
+.list-item label:active {
+	background-color: indianred;
+}
+
+input[type=checkbox]:checked+.text {
+	color: #9B96AC;
+}
+
+input[type=checkbox]:checked+.text span {
+	color: #9B96AC;
+}
+
+
+input[type=checkbox] {
+	display: none;
+}
+
+.text::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	background-color: #fff;
+	margin-left: -35px;
+}
+
+input[type=checkbox]:checked+.text::before {
+	background-image: url('/img/check.png');
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+input[type=checkbox]:checked+.text::after {
+	content: '';
+	position: absolute;
+	background-color: #9B96AC;
+	height: 2px;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
+
+
+
+/* !wish */
+
+
+.bon {
+	background-color: #4A4F56;
+	padding: 12px 0 12px;
+	margin-bottom: 300px;
+
+}
+
+.bon {
+	display: flex;
+	justify-content: center;
+	font-weight: 400;
+	font-size: 18px;
+	color: #FF8984;
+	text-align: center;
+
+}
