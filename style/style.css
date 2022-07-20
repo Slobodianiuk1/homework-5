@@ -7,9 +7,15 @@
 
 
 .header {
-	min-height: 82px;
+
 	background-color: #4A4F56;
-	padding: 23px 0 12px;
+}
+
+.header .container {
+	min-height: 82px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container {
@@ -32,6 +38,7 @@
 	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
+
 }
 
 
@@ -39,11 +46,12 @@
 
 .food {
 	background-color: #3B3F45;
-	height: calc(100vh - 83px);
+	height: calc(100vh - 82px);
 }
 
 .list {
-	padding: 20px 0 45px;
+	padding-top: 20px;
+	margin-bottom: 45px;
 }
 
 .list li:nth-child(odd) {
@@ -62,7 +70,7 @@
 
 .list-item label {
 	display: flex;
-	height: 45px;
+	min-height: 45px;
 	justify-items: center;
 	width: 100%;
 }
@@ -73,7 +81,7 @@
 
 .list label:hover {
 	background-color: #625E77;
-	min-height: 41px;
+	/* min-height: 41px; */
 	border: solid #fff 2px;
 	border-left: none;
 	border-right: none;
@@ -84,7 +92,6 @@
 	display: flex;
 	align-items: center;
 	color: #fff;
-	padding: 12px 0 12px;
 	font-size: 18px;
 	font-weight: 400px;
 	margin-left: 47px;
@@ -143,7 +150,7 @@ input[type=checkbox]:checked+.text::after {
 	content: '';
 	position: absolute;
 	background-color: #9B96AC;
-	height: 2px;
+	height: 1px;
 	width: 100%;
 	top: 50%;
 	transform: translateY(-50%);
@@ -158,17 +165,17 @@ input[type=checkbox]:checked+.text::after {
 
 .bon {
 	background-color: #4A4F56;
-	padding: 12px 0 12px;
 	margin-bottom: 300px;
-
-}
-
-.bon {
+	min-height: 45px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+.bon-title {
 	font-weight: 400;
 	font-size: 18px;
 	color: #FF8984;
 	text-align: center;
-
+	padding: 5px 10px;
 }
