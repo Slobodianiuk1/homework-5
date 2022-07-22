@@ -7,82 +7,95 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shopping List</title>
 	<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="title">
-				<h1>CSS Dinner Shopping List</h1>
-				<p>Let’s go to the mall!</p>
-			</div>
+			<h1>CSS Dinner Shopping List</h1>
+			<span>Let’s go to the mall!</span>
 		</div>
 	</header>
 	<main>
-		<section class="food">
+		<section class="shopping-list">
 			<div class="container">
 				<ul class="list">
 					<li class="list-item">
 						<label>
 							<input type="checkbox">
-							<span class="text">
-								A lot of pickles
-								<span>for the next lessons about CSS</span>
-							</span>
+							<div class="description">
+								<div class="text">
+									A lot of pickles
+									<span>(for the next lessons about CSS)</span>
+								</div>
+							</div>
 						</label>
 					</li>
 					<li class="list-item">
 						<label>
 							<input type="checkbox">
-							<span class="text">
-								10 apples
-								<span>for more CSS manipulations</span>
-							</span>
+							<div class="description">
+								<div class="text">
+									10 apples
+									<span>(for more CSS manipulations)</span>
+								</div>
+							</div>
 						</label>
 					</li>
 					<li class="list-item">
 						<label>
 							<input type="checkbox">
-							<span class="text">
-								20 oranges
-								<span>because they are awesome</span>
-							</span>
+							<div class="description">
+								<div class="text">
+									20 oranges
+									<span>(because they are awesome)</span>
+								</div>
+							</div>
 						</label>
 					</li>
 					<li class="list-item">
 						<label>
 							<input type="checkbox">
-							<span class="text">
-								13 plates
-								<span>hm... they always dissapear</span>
-							</span>
+							<div class="description">
+								<div class="text">
+									13 plates
+									<span>(hm... they always dissapear)</span>
+								</div>
+							</div>
 						</label>
 					</li>
 					<li class="list-item">
 						<label>
 							<input type="checkbox">
-							<span class="text">
-								15 bentos
-							</span>
+							<div class="description">
+								<div class="text">
+									15 bentos
+
+								</div>
+							</div>
 						</label>
 					</li>
 					<li class="list-item">
 						<label>
 							<input type="checkbox">
-							<span class="text">
-								1 bottle of Sake
-								<span>for my friends</span>
-							</span>
+							<div class="description">
+								<div class="text">
+									1 bottle of Sake
+									<span>(for my friends)</span>
+								</div>
+							</div>
 						</label>
 					</li>
 				</ul>
-				<div class="bon">
-					<p class="bon-title">
-						Bon appetit :)
-					</p>
-				</div>
+				<span class="message">
+					Bon appetit :)
+				</span>
 			</div>
 		</section>
 	</main>
